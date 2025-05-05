@@ -17,16 +17,41 @@ handling to add, edit, and remove items from the list. You will practice:
     ● An unordered list to display the shopping list items.
 2. Core Features:
   ● Add Items:
-    ○ When the user enters text in the input field and clicks the "Add" button, a new list item is added to the.
+    ○ When the user enters text in the input field and clicks the "Add" button, a new list item is added to the list.
+EX: const newElement = document.createElement("p"); ===== newElement.textContent = "I am a new paragraph!"; ===== document.body.appendChild(newElement);
     ○ Each list item should include:
       ■ The item text.
       ■ A "Remove" button to delete the item.
       ■ A "Edit" button to modify the item text.
   ● Remove Items:
-    ○ When the "Remove" button is clicked, the corresponding list item is deleted from the.
+    ○ When the "Remove" button is clicked, the corresponding list item is deleted from the list.
+EX: const element = document.getElementById("main-heading"); ===== element.remove();
   ● Edit Items:
     ○ When the "Edit" button is clicked:
+EX: const button = document.getElementById("alert-button"); ===== button.addEventListener("click", function() { ===== alert("Button clicked!"); ===== });
       ■ Replace the item text with an input field containing the current text.
       ■ Change the "Edit" button to a "Save" button.
       ■ When "Save" is clicked, update the text with the new input value and revert the button back to "Edit".
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Shopping List Application</title>
+  <link href="/styles.css" type="text/css" rel="stylesheet" />
+  <script src="/script1.js" type="module" defer></script>
+</head>
+
+<body>
+  <h1 id="mainheading">Shopping List</h1>
+  <label for="new">New Items: </label>
+  <input type="text" id="newInput" placeholder="enter new item">
+  <button id="buttonAdd">Add to list</button>
+  <ul id="output">
+  </ul>
+</body>
+
+</html>
