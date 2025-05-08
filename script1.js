@@ -21,11 +21,10 @@ window.addEventListener("load", () => {
             const buttonSave = newItem.querySelector(".buttonSave");
             buttonSave.addEventListener("click", function () {
                 const editedItem = editInput.value;
-                newItem.textContent = editedItem;
+                newItem.textContent = editedItem; // save list item text as new edited text
 
-                newItem.appendChild(buttonEdit);
-                newItem.appendChild(buttonRemove);
-                newItem = editedItem;
+                newItem.appendChild(buttonEdit); // add button bak after save
+                newItem.appendChild(buttonRemove); // add button bak after save
             })
         })
 
@@ -41,20 +40,3 @@ window.addEventListener("load", () => {
     buttonAdd.addEventListener("click", addItem);
 
 });
-
-
-// const buttonEdit = document.createElement("button");
-// buttonEdit.textContent = "edit";
-// newItem.appendChild(buttonEdit);
-// buttonEdit.addEventListener("click", function () {
-//     newItem.innerHTML = `<input type="text" value="" />
-//     <button class="buttonSave">save</button>`; // removes edit and remove buttons & adds input field and save button
-//     const editInput = newItem.querySelector("input");
-//     const buttonSave = newItem.querySelector(".buttonSave");
-//     buttonSave.addEventListener("click", function () {
-//         const editedItem = editInput.value;
-//         newItem.textContent = editedItem;
-
-//         newItem.appendChild(buttonEdit);
-//         newItem.appendChild(buttonRemove);
-//         newItem = editedItem;
