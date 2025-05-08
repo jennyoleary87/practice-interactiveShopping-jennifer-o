@@ -13,6 +13,7 @@ body {
 #main-heading {
     padding: 20px;
     font-weight: bold;
+    color: darkcyan;
 }
 
 li {
@@ -21,4 +22,6 @@ li {
 
 button {
     margin: 2vw;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
 }
